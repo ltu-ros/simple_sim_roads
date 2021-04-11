@@ -1,0 +1,17 @@
+# Field image location
+# Resolution: 576x876
+field_image_file: 'course_1.png'
+
+# Image file scaling and center
+x_scale: 250
+y_scale: 250
+x_center_img: 607
+y_center_img: 660
+img_view_scale: 0.8
+
+# Default robot start location
+# Can be overriden in launch file
+Xr_init: 0.6
+Yr_init: 1.3
+Theta_init: 180
+

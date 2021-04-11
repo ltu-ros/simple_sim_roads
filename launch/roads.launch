@@ -1,0 +1,18 @@
+<launch>
+
+  <arg name="course" />
+
+  <!-- Load map -->
+  <param name="map_dir" value="$(find simple_sim_roads)/map" />
+  <rosparam command="load" file="$(find simple_sim_roads)/map/$(arg course).yaml" />
+  <rosparam command="load" file="$(find simple_sim_roads)/map/$(arg course)_obstacles.yaml" />
+
+  <!-- Load robot -->
+  <rosparam command="load" file="$(find simple_sim)/robot/basic_differential.yaml" />
+
+  <include file="$(find simple_sim)/launch/simple_sim.launch">
+    <arg name="show_rviz" value="true" />
+    <arg name="show_kb_teleop" value="false" />
+  </include>
+
+</launch>
