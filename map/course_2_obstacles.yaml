@@ -1,3 +1,4 @@
 # Circle obstructions (up to 10)
-circ0: [ -1.18, 0.84, 0.07 ]
+circ0: [ 2.07,  0.75, 0.07 ]
+circ1: [ 2.07, -3.0, 0.07 ]
 
